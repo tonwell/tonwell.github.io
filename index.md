@@ -4,7 +4,7 @@
 
 ## Fala, galerinha!
 
-Nessa página irei centralizar meus artigos sobre Jetpack Compose e talvez alguns outros assuntos de dev futuramente para melhor acompanhamento daqueles que se interessarem.
+Nessa página irei centralizar meus artigos sobre Jetpack Compose para melhor acompanhamento daqueles que se interessarem.
 
 - [Uma Introdução Ao Compose][1]
 
