@@ -35,7 +35,7 @@ fun HelloWorldScreen() {
 
 &nbsp;
 
-Pra colocar o compose num Fragment, o processo se dá no *onCreateView*
+Pra colocar o compose num Fragment, o processo se dá no *onCreateView*:
 
 ```kotlin
 class MyFragment: Fragment() {
@@ -69,7 +69,7 @@ fun HelloScreen() {
 
 &nbsp;
 
-> Obs: é prática comum que o primeiro composable de uma *Activity* ou *Fragment* represente a tela toda e que a partir dele se chamem os outros composables
+> Obs: é prática comum que o primeiro composable de uma *Activity* ou *Fragment* represente a tela toda e que a partir dele se chamem os outros composables, isso quando fazemos projetos de uma tela. (Spoiler: quando o projeto exige uma navegação mais complexa, usamos esse espaço pra inserir o NavHost do Navigation Compose)
 
 &nbsp;
 
