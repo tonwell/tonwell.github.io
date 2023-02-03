@@ -32,7 +32,8 @@ fun HelloWorldScreen() {
     }
 }
 ```
-<br/>
+
+&nbsp;
 
 Pra colocar o compose num Fragment, o processo se dá no *onCreateView*
 
@@ -65,7 +66,8 @@ fun HelloScreen() {
     }
 }
 ```
-<br/>
+
+&nbsp;
 
 > Obs: é prática comum que o primeiro composable de uma *Activity* ou *Fragment* represente a tela toda e que a partir dele se chamem os outros composables
 
@@ -80,6 +82,8 @@ Componentes que visam o posicionamento dos elementos na tela
 * BoxWithConstraints
 * ConstraintLayout
 
+&nbsp;
+
 ### Foundation 
 Componentes de UI básicos
 
@@ -91,7 +95,9 @@ Componentes de UI básicos
 * Shape
 * entre outros
 
-#### Material
+&nbsp;
+
+### Material
 Componentes do material design (a maioria da UI vem daqui)
 
 * AlertDialog
@@ -114,6 +120,8 @@ Componentes do material design (a maioria da UI vem daqui)
 
 > Para mais detalhes sobre esses composables e outros não incluídos na listagem, acesse esse [link][1], que te leva direto para uma página que contém diversos desses composables do Material e como utilizá-los. Caso queira mais detalhes sobre o Material como design system, acesse [Material 2][2] ou [Material 3][3]
 
+&nbsp;
+
 ## Detalhes de layout
 
 **Row**: coloca os composables em uma linha, os adicionando no eixo horizontal da esquerda para a direita. Equivale ao *LinearLayout com orientação horizontal*
@@ -124,6 +132,7 @@ Row {
 }
 ```
 
+&nbsp;
 
 **Column**: coloca os composables em coluna, os adicionando no eixo vertical de cima para baixo. Equivale ao *LinearLayout com orientação vertical*
 	
@@ -132,7 +141,8 @@ Column {
     // composables
 }
 ```
-<br/>
+
+&nbsp;
 
 **Box**: alinha os composables empilhando-os num eixo de profundidade de trás pra frente, com os componentes mais recentes sobre os mais antigos na ordem de chamada (spoiler: dá pra modificar isso com o modificador *zIndex*). Equivale ao *FrameLayout*
 
@@ -141,7 +151,8 @@ Box {
 	// composables
 }
 ```
-<br/>
+
+&nbsp;
 
 **BoxWithConstraints**: mesma coisa que o *Box*, só que com esse composable é possível pegar dimensões como largura ou altura. O exemplo abaixo foi tirado de [Jetpack Compose Playground][4]
 
@@ -178,7 +189,8 @@ private fun MyBoxWithConstraintsDemo() {
     }
 }
 ```
-<br/>
+
+&nbsp;
 
 **ConstraintLayout**: o sistema do compose que faz uso de recomposição é eficiente o suficiente pra que a gente não se preocupe com aninhamento de “views”, então é possível construir tudo de layout com *Rows*, *Columns* e *Boxes*. Mas caso a UI seja muito complexa. existe também a opção de usarmos o *ConstraintLayout*, este último só não oferece nenhuma vantagem de performance como no sistema de views anterior. 
     
@@ -210,7 +222,8 @@ ConstraintLayout {
     }
 }
 ```
-<br/>
+
+&nbsp;
 
 > Aproveitando a deixa, para carregarmos imagens a partir de URL's, a Google indica duas libs: *Coil* ou *Glide*. A lib *Coil* é a mais frequentemente utilizada pela comunidade, inclusive em tutoriais. No *build.gradle* do módulo devemos inserir a seguinte dependência: `implementation("io.coil-kt:coil-compose:2.2.2")`.
 > Para usarmos no compose, chamamos o composable *AsyncImage*, cujos principais parâmetros são *model*, que recebe a URL, e *contentDescription*, que pode ser um texto descrevendo o que temos na imagem.
@@ -221,6 +234,7 @@ ConstraintLayout {
 > )
 > ```
 
+&nbsp;
 
 ## Modifiers
 Os modifiers são modificadores que vão determinar como um composable é desenhado. Todos os composables fundamentais possuem esse parâmetro.
@@ -236,7 +250,9 @@ Box(
         .modifierN()
 )
 ```
-<br/>
+
+&nbsp;
+
 Os modifiers são aplicados na ordem em que são definidos, e podem ser repetidos. Por exemplo, podemos aplicar o modifier de padding uma ou mais vezes na cadeia de modifiers, porém a ordem em que eles são definidos muda a forma que o composable é desenhado.
 
 Dentre os modifiers, os mais usados são:
@@ -294,7 +310,8 @@ fun ExampleCallingAboveComponent() {
     )
 }
 ```
-<br/>
+
+&nbsp;
 
 ## O que temos por vir
 Ainda há muitos pontos a serem discutidos, como: manipulação de estado, animações, navegação, injeção de dependência, arquitetura, melhores práticas, etc, etc, etc. Mas só pra termos um exemplo de como é uma animação, temos aqui dois códigos extraídos do [Android Developers][5], demonstrando uma animação de valor e uma animação de visibilidade, respectivamente. A animação de valor está definindo a opacidade do composable de acordo com um condicional (**enabled**) e a animação de visibilidaade faz uso das transições `fadeIn()` e `fadeOut()` pra animar visibilidade dos fundos, transicionando entre as cores azul e cinza.
