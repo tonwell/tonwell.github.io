@@ -79,7 +79,6 @@ Componentes que visam o posicionamento dos elementos na tela
 * Box
 * BoxWithConstraints
 * ConstraintLayout
-<br/>
 
 ### Foundation 
 Componentes de UI básicos
@@ -91,7 +90,6 @@ Componentes de UI básicos
 * LazyRow
 * Shape
 * entre outros
-<br/>
 
 #### Material
 Componentes do material design (a maioria da UI vem daqui)
@@ -125,7 +123,7 @@ Row {
 	// composables
 }
 ```
-<br/>
+
 
 **Column**: coloca os composables em coluna, os adicionando no eixo vertical de cima para baixo. Equivale ao *LinearLayout com orientação vertical*
 	
