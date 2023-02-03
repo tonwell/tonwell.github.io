@@ -2,6 +2,8 @@
 
 ## Fala, galerinha!
 
+Primeiramente, uma muito breve apresentação: eu sou **Wellington**, mas podem me chamar de **Well**. Sou formado em *Ciência da Computação* pela *Universidade Federal Fluminense* e atualmente sou desenvolvedor *Android* na **Americanas S.A**.
+
 Nessa página irei centralizar meus artigos sobre Jetpack Compose para melhor acompanhamento daqueles que se interessarem.
 
 - [Uma Introdução Ao Compose][1]
