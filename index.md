@@ -1,5 +1,3 @@
-# Coding Well
-
 ![android with brackets][image_ref_yni2i9ji]
 
 ## Fala, galerinha!
