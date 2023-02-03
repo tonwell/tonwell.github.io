@@ -71,6 +71,8 @@ fun HelloScreen() {
 
 > Obs: é prática comum que o primeiro composable de uma *Activity* ou *Fragment* represente a tela toda e que a partir dele se chamem os outros composables
 
+&nbsp;
+
 ## Componentes de UI Fundamentais
 
 ### Layout 
@@ -117,6 +119,8 @@ Componentes do material design (a maioria da UI vem daqui)
 * TextField
 * TopAppBar 
 * BottomNavigation
+
+&nbsp;
 
 > Para mais detalhes sobre esses composables e outros não incluídos na listagem, acesse esse [link][1], que te leva direto para uma página que contém diversos desses composables do Material e como utilizá-los. Caso queira mais detalhes sobre o Material como design system, acesse [Material 2][2] ou [Material 3][3]
 
@@ -193,8 +197,12 @@ private fun MyBoxWithConstraintsDemo() {
 &nbsp;
 
 **ConstraintLayout**: o sistema do compose que faz uso de recomposição é eficiente o suficiente pra que a gente não se preocupe com aninhamento de “views”, então é possível construir tudo de layout com *Rows*, *Columns* e *Boxes*. Mas caso a UI seja muito complexa. existe também a opção de usarmos o *ConstraintLayout*, este último só não oferece nenhuma vantagem de performance como no sistema de views anterior. 
-    
+
+&nbsp;
+
 > Obs: é necessário incluir uma lib específica do constraint layout compose no build.gradle do módulo: `implementation 'androidx.constraintlayout:constraintlayout-compose:1.0.1'`.
+
+&nbsp;
 
 Abaixo temos um exemplo muito simples de alinhamento entre dois componentes onde o botão fica centralizado e abaixo da imagem
 	
@@ -279,7 +287,11 @@ Modifier
     )
 ```
 
+&nbsp;
+
 > Vale notar que por padrão não temos margens nos composables, então as formas de definirmos espaçamentos são ou com o modifier *padding* ou usando o composable *Spacer* (este pra definir espaçamento entre composables - é só um composable preenchedor de espaço). O modifier *offset* também é uma opção, dado seus limites.
+
+&nbsp;
 
 - **zIndex**: é capaz de modificar a profundidade de um composable desenhado na tela, o trazendo pra frente de outros composables ou o levando pra trás.
 
