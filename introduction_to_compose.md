@@ -94,7 +94,7 @@ Componentes de UI básicos
 <br/>
 
 #### Material
-Componentes do material design (a maioria da UI vem daqui). Para mais detalhes sobre esses composables e outros não incluídos na listagem, acesse esse [link][1], que te leva direto para uma página que contém diversos desses composables do Material e como utilizá-los. Caso queira mais detalhes sobre o Material como design system, acesse [Material 2][2] ou [Material 3][3]
+Componentes do material design (a maioria da UI vem daqui)
 
 * AlertDialog
 * Button
@@ -113,7 +113,8 @@ Componentes do material design (a maioria da UI vem daqui). Para mais detalhes s
 * TextField
 * TopAppBar 
 * BottomNavigation
-<br/>
+
+> Para mais detalhes sobre esses composables e outros não incluídos na listagem, acesse esse [link][1], que te leva direto para uma página que contém diversos desses composables do Material e como utilizá-los. Caso queira mais detalhes sobre o Material como design system, acesse [Material 2][2] ou [Material 3][3]
 
 ## Detalhes de layout
 
