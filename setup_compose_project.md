@@ -9,7 +9,7 @@ A primeira janela que surge é a de boas vindas. Nela, clique em *New Project*.
 ![][create_project_1]
 &nbsp;
 
-Alternativamente, se já houver um projeto aberto, você pode criar um novo projeto indo no menu *File* > *New* > *New Project*, ambas as ações vão te enviar para a próxima etapa.
+Alternativamente, se já houver um projeto aberto, você pode criar um novo projeto indo no menu *File* > *New* > *New Project*. Ambas as ações vão te enviar para a próxima etapa.
 
 ![][create_project_1_alt]
 &nbsp;
