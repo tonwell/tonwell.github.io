@@ -38,7 +38,7 @@ Em seguida temos a estrutura do projeto. Explicarei brevemente os arquivos relev
 - *Shape.kt* : aqui é onde teremos padrões de Shapes, que são formas que podem ser usadas pra dar forma a um componente de UI (exemplo: um RoundCornerShape molda o componente em um retângulo arredondado)
 - *Type.kt* : declara padrões de estilizações de textos, como tamanho, cor, fonte, etc.
 - *Theme.kt* : É quem fornece o composable de tema usado na activity principal e a partir daí possivelmente em todo app, e também é onde os arquivos supracitados são inseridos para definição do tema
-- *build.gradle (Module :app)* : aqui é onde estão todas as dependências necessárias ao projeto, assim como algumas configurações
+- *build.gradle (Module :app)* : aqui é onde estão todas as dependências necessárias ao módulo, assim como algumas configurações
 - *MainActivity.kt* : A activity principal do projeto, onde temos o `setContent` no `onCreate`. que é responsável por admitir os componentes do Compose e assim poder mostrá-los.
 
 &nbsp;
