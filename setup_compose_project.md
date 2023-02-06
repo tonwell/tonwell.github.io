@@ -43,7 +43,7 @@ Em seguida temos a estrutura do projeto. Explicarei brevemente os arquivos relev
 
 &nbsp;
 
-No caso do *build.gradle (Module :app)* ainda existem dois pontos que valem ressaltar: a feature do `compose` que é ativada dentro do objeto `buildFeatures` e o `kotlinCompilerExtensionVersion` dentro do objeto `composeOptions` - que deve conter a mesma versão das libs principais de Compose pra evitar erros durante o desenvolvimento. Ambas as configurações são as principais responsáveis pelo Compose nos módulos onde são declaradas (claro, além das dependências).
+No caso do *build.gradle (Module :app)* ainda existem dois pontos que valem ressaltar: a feature do `compose` que é ativada dentro do objeto `buildFeatures` e o `kotlinCompilerExtensionVersion` dentro do objeto `composeOptions` (que deve conter a mesma versão das libs principais de Compose pra evitar erros durante o desenvolvimento). Ambas as configurações são as principais responsáveis pelo Compose nos módulos onde são declaradas (claro, além das dependências).
 
 ## Próxima Etapa
 
