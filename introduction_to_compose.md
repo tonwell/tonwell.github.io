@@ -2,6 +2,8 @@
 
 O **Compose** é o novo sistema de UI do Android. Constrói e atualiza a tela em ciclos de *recomposição*, onde ele otimamente monta uma árvore de componentes e consegue identificar onde ocorreu uma mudança de estado para recompor somente os elementos afetados pelo estado alterado.
 
+> O termo *sistema* não é o melhor pra usarmos no caso do Compose, mas simplifica bastante a explicação. Na verdade o que compõe o Compose é um conjunto de bibliotecas (libs).
+
 **Composable**: é a forma de declararmos funções que geram UI para o Compose. Essas funções não possuem retorno, mas podem receber parâmetros. Todo composable deve ser anotado com *@Composable*.
 
 Os composables devem ser funções idempotentes, isto é, pra um mesmo conjunto de parâmetros de entrada devem gerar um mesmo composable (ou seja, devemos tratar os parâmetros para gerar UI, e não usar variáveis globais, valores randômicos ou contadores dentro de um composable).
